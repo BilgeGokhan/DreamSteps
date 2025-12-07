@@ -1,0 +1,86 @@
+[
+{
+    "id": "finance",
+    "title": "Para Biriktirme",
+    "primaryColor": "#F59F00",
+    "backgroundColor": "#FFF9E6",
+    "animation": "animations/coins_falling.json"
+  },
+  {
+    "id": "car_home",
+    "title": "Araba / Ev Alma",
+    "primaryColor": "#4DABF7",
+    "backgroundColor": "#E3FAFC",
+    "animation": "animations/road_line.json"
+  },
+  {
+    "id": "fitness",
+    "title": "Fitness / Kilo Verme",
+    "primaryColor": "#51CF66",
+    "backgroundColor": "#F1F3F5",
+    "animation": "animations/heartbeat.json"
+  },
+  {
+    "id": "health",
+    "title": "Sağlık",
+    "primaryColor": "#20C997",
+    "backgroundColor": "#E9ECEF",
+    "animation": "animations/breath.json"
+  },
+  {
+    "id": "sport",
+    "title": "Spor Alışkanlığı",
+    "primaryColor": "#FF6B6B",
+    "backgroundColor": "#FFF0F0",
+    "animation": "animations/energy_lines.json"
+  },
+  {
+    "id": "language",
+    "title": "Dil Öğrenme",
+    "primaryColor": "#9C88FF",
+    "backgroundColor": "#F3F0FF",
+    "animation": "animations/letters_floating.json"
+  },
+  {
+    "id": "career",
+    "title": "Kariyer / Sınav",
+    "primaryColor": "#FF922B",
+    "backgroundColor": "#FFF4E6",
+    "animation": "animations/upward_graph.json"
+  },
+  {
+    "id": "relationship",
+    "title": "Aile / İlişki",
+    "primaryColor": "#FF8787",
+    "backgroundColor": "#FFF0F6",
+    "animation": "animations/hearts_soft.json"
+  },
+  {
+    "id": "quit_bad_habit",
+    "title": "Alışkanlık Kırma",
+    "primaryColor": "#495057",
+    "backgroundColor": "#F8F9FA",
+    "animation": "animations/smoke_fade.json"
+  },
+  {
+    "id": "self_improvement",
+    "title": "Kişisel Gelişim",
+    "primaryColor": "#7048E8",
+    "backgroundColor": "#E7E1FA",
+    "animation": "animations/halo_pulse.json"
+  },
+  {
+    "id": "travel",
+    "title": "Seyahat",
+    "primaryColor": "#15AABF",
+    "backgroundColor": "#E3FAFC",
+    "animation": "animations/plane_fly.json"
+  },
+  {
+    "id": "minimalism",
+    "title": "Minimal Yaşam",
+    "primaryColor": "#868E96",
+    "backgroundColor": "#F8F9FA",
+    "animation": "animations/clean_lines.json"
+  }
+]

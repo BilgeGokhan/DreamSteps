@@ -1,0 +1,98 @@
+{
+  "finance": {
+    "color": "#FFD43B",
+    "animation": "coins.json",
+    "message_soft": "Bu ay finansal hedefine güzel adımlar attın.",
+    "message_motivational": "Harika ilerliyorsun! Hazırsan hayaline biraz daha yaklaşalım.",
+    "message_pro": "Finans hedefinin bu bölümünü tamamladın. Bir sonraki adıma geçmek ister misin?",
+    "cta": "Bir Adım Daha Yaklaş"
+  },
+  "home_car": {
+    "color": "#4C6EF5",
+    "animation": "road.json",
+    "message_soft": "Hayalindeki o ana her zamankinden daha yakınsın.",
+    "message_motivational": "Bu ay yola güçlü başladın. Devam etmek için hazır mısın?",
+    "message_pro": "Bu planlama aşamasını tamamladın. Sonraki adımlara geçelim mi?",
+    "cta": "Yola Devam Et"
+  },
+  "fitness": {
+    "color": "#4CAF50",
+    "animation": "heartbeat.json",
+    "message_soft": "Bedenine gösterdiğin özen için kendinle gurur duyabilirsin.",
+    "message_motivational": "Gittikçe güçleniyorsun. Bir adım daha atalım mı?",
+    "message_pro": "Bu dönemki fitness hedefini tamamladın. Devam etmek ister misin?",
+    "cta": "Devam Et"
+  },
+  "health": {
+    "color": "#00BFA6",
+    "animation": "breath.json",
+    "message_soft": "Kendine iyi bakmaya devam ettiğin için teşekkür hak ediyorsun.",
+    "message_motivational": "Sağlığın için attığın her adım seni güçlendiriyor.",
+    "message_pro": "Sağlık rutininin bu bölümünü tamamladın. Biraz daha ilerleyelim mi?",
+    "cta": "Sağlığım İçin Devam Et"
+  },
+  "sports": {
+    "color": "#FF9800",
+    "animation": "energy_lines.json",
+    "message_soft": "Hareket ettikçe bedenin ve zihnin canlanıyor.",
+    "message_motivational": "Sporu hayatına almaya başardın, devamı geliyor!",
+    "message_pro": "Bu antrenman dönemini tamamladın. Yeni döneme geçelim mi?",
+    "cta": "Yeni Adım"
+  },
+  "language": {
+    "color": "#3F51B5",
+    "animation": "words_flying.json",
+    "message_soft": "Öğrendiğin her kelime seni yeni bir dünyaya yaklaştırıyor.",
+    "message_motivational": "Dil yolculuğunda güzel bir ay geçirdin. Devam edelim mi?",
+    "message_pro": "Bu dil öğrenme aşamasını tamamladın. Sonraki modüle geçmek ister misin?",
+    "cta": "Yeni Kelimelere Devam Et"
+  },
+  "career": {
+    "color": "#283593",
+    "animation": "chart_up.json",
+    "message_soft": "Kariyerin için attığın adımlar birikiyor.",
+    "message_motivational": "Gelişiminle fark yaratıyorsun. Bir adım daha atmaya var mısın?",
+    "message_pro": "Bu dönemki kariyer çalışmanı tamamladın. Bir sonraki aşamaya geçelim mi?",
+    "cta": "Bir Sonraki Aşamaya Geç"
+  },
+  "relationship": {
+    "color": "#F48FB1",
+    "animation": "hearts_soft.json",
+    "message_soft": "Bağ kurduğun her an, ilişkilerini güçlendiriyor.",
+    "message_motivational": "Sevgiye ve anlayışa yer açıyorsun, bu çok değerli.",
+    "message_pro": "Bu ilişki odaklı dönemi tamamladın. Devam etmek ister misin?",
+    "cta": "Bağımı Güçlendir"
+  },
+  "quit_habit": {
+    "color": "#455A64",
+    "animation": "smoke_clear.json",
+    "message_soft": "Bu ay gösterdiğin çaba gerçekten çok değerli.",
+    "message_motivational": "Her ‘hayır’ dediğinde biraz daha özgürleşiyorsun. Devam edelim mi?",
+    "message_pro": "Bu alışkanlıkla mücadelenin bir bölümünü tamamladın. Güçlenmeye devam etmek ister misin?",
+    "cta": "Güçlenmeye Devam Et"
+  },
+  "self_improvement": {
+    "color": "#7E57C2",
+    "animation": "glow.json",
+    "message_soft": "Kendine kattığın her şey, geleceğini aydınlatıyor.",
+    "message_motivational": "Gelişimin için attığın adımlar fark yaratıyor.",
+    "message_pro": "Kişisel gelişim yolculuğunun bu bölümünü tamamladın. Devam etmek ister misin?",
+    "cta": "Yeni Bir Adım"
+  },
+  "travel": {
+    "color": "#03A9F4",
+    "animation": "plane.json",
+    "message_soft": "Keşfetmek istediğin yerlere biraz daha yaklaştın.",
+    "message_motivational": "Hayalini kurduğun yolculuk için güzel bir ay geçirdin.",
+    "message_pro": "Bu gezi planlama dönemini tamamladın. Devam edelim mi?",
+    "cta": "Bir Adım Daha Keşfet"
+  },
+  "minimal": {
+    "color": "#B0BEC5",
+    "animation": "clean_space.json",
+    "message_soft": "Sadeleştikçe nefes alan bir alan oluşturuyorsun.",
+    "message_motivational": "Bıraktıkların, daha hafif hissetmen için alan açıyor.",
+    "message_pro": "Bu sadeleşme dönemini tamamladın. Devam etmek ister misin?",
+    "cta": "Sadelik Yolunda Devam Et"
+  }
+}

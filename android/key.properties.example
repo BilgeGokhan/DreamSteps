@@ -1,0 +1,8 @@
+# Bu dosyayı kopyalayın ve "key.properties" olarak kaydedin
+# key.properties dosyasını .gitignore'a ekleyin (zaten ekli olmalı)
+
+storePassword=your_keystore_password
+keyPassword=your_key_password
+keyAlias=your_key_alias
+storeFile=../keystore/dreamsteps-release-key.jks
+
