@@ -1,7 +1,7 @@
 name: dreamsteps
 description: A fully offline Flutter app for tracking dreams and goals.
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.0.4+4
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -31,6 +31,9 @@ dependencies:
   
   # Google Ads
   google_mobile_ads: ^5.1.0
+  
+  # App Tracking Transparency (iOS 14.5+)
+  app_tracking_transparency: ^2.0.6+1
   
   # Localization
   flutter_localizations:
