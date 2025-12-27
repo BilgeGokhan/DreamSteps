@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../state/dream_state.dart';
 import '../state/language_state.dart';
 import '../l10n/app_localizations.dart';
+import '../services/notification_service.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -31,31 +32,45 @@ class _SplashScreenState extends State<SplashScreen>
     );
     _controller.forward();
 
-    // Async işlemleri başlat
-    _initializeApp();
+    // Widget build edildikten sonra async işlemleri başlat (Provider context hazır olmalı)
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _initializeApp();
+    });
   }
 
   Future<void> _initializeApp() async {
     try {
+      // Context'in hazır olduğundan emin ol
+      if (!mounted) return;
+      
       final dreamState = Provider.of<DreamState>(context, listen: false);
 
-      // Initialize JSON data with timeout
+      // Initialize JSON data with timeout (daha kısa timeout - hızlı başlatma)
       final languageState = Provider.of<LanguageState>(context, listen: false);
       final localizations = AppLocalizations(languageState.locale);
       
-      await dreamState.initialize().timeout(
-        const Duration(seconds: 10),
+      // Paralel olarak initialize et ve load et
+      final initFuture = dreamState.initialize().timeout(
+        const Duration(seconds: 5), // Timeout'u 5 saniyeye düşür
         onTimeout: () {
           debugPrint('SplashScreen: Initialize timeout!');
           throw TimeoutException(localizations.splashLoadingTimeout);
         },
       );
 
-      // Load from local storage
+      // Initialize tamamlanır tamamlanmaz load et
+      await initFuture;
       await dreamState.loadFromLocal();
 
-      // Navigate after 1.5-2 seconds
-      Future.delayed(const Duration(milliseconds: 2000), () {
+      // Bildirimleri schedule et (dreamText olsun ya da olmasın)
+      NotificationService.scheduleDailyReminder(
+        dreamText: dreamState.dreamText,
+      ).catchError((e) {
+        debugPrint('SplashScreen: Error scheduling notification: $e');
+      });
+
+      // Minimum delay ile hızlı geçiş (1 saniye yeterli)
+      Future.delayed(const Duration(milliseconds: 1000), () {
         if (mounted) {
           _navigateToNext();
         }
@@ -64,7 +79,7 @@ class _SplashScreenState extends State<SplashScreen>
       debugPrint('SplashScreen: Error during initialization: $e');
       // Hata durumunda bile dil seçim ekranına git (kullanıcı deneyimini bozmamak için)
       if (mounted) {
-        Future.delayed(const Duration(milliseconds: 1000), () {
+        Future.delayed(const Duration(milliseconds: 500), () {
           if (mounted) {
             Navigator.of(context).pushReplacementNamed('/language_selection');
           }
@@ -74,6 +89,8 @@ class _SplashScreenState extends State<SplashScreen>
   }
 
   void _navigateToNext() {
+    if (!mounted) return;
+    
     final dreamState = Provider.of<DreamState>(context, listen: false);
     if (dreamState.dreamText != null && dreamState.dreamText!.isNotEmpty) {
       Navigator.of(context).pushReplacementNamed('/dashboard');

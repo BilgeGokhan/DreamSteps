@@ -45,6 +45,16 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>AppIcon</string>
+			</array>
+		</dict>
+	</dict>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-9905832999228548~1605400712</string>
 	<key>NSUserTrackingUsageDescription</key>
